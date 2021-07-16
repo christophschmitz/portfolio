@@ -11,8 +11,8 @@ body {
   background-color: #141414;
   color: #fff;
   margin: 0;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 .head {
   display: grid;
@@ -32,14 +32,17 @@ body {
 .navlinks ul li {
   display: inline-block;
   font-weight: 600;
-  padding: 1em;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  margin: 0 0.7em 0 0.7em;
   color: #fff;
-  justify-content: space-between;
   transition: 0.5s;
   cursor: pointer;
+  border: 1px solid #fff;
 }
 .navlinks ul li:hover {
-  color: #5b7678;
+  color: #141414;
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 .hero {
   height: 35vh;
@@ -56,10 +59,45 @@ body {
 }
 
 .intro p {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .heroimage {
   justify-self: end;
   align-self: center;
+}
+
+.about {
+  height: 35vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5% 0 10% 0;
+}
+
+.aboutimage img {
+  width: 80%;
+  border-radius: 3%;
+}
+.aboutme h2 {
+  font-size: 1.5em;
+}
+.aboutme p {
+  padding-bottom: 5%;
+}
+.tags {
+  padding: 0;
+}
+.tags li {
+  display: inline-block;
+  background-color: #fff;
+  color: #141414;
+  padding: 0.5em 1em;
+  margin: 0.5em 0.5em 0.5em 0;
+  list-style: none;
+  justify-self: start;
+  cursor: pointer;
+}
+.tags li:hover {
+  background-color: #5b7678;
+  color: #fff;
 }
