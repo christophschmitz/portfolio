@@ -11,14 +11,15 @@ body {
   background-color: #141414;
   color: #fff;
   margin: 0;
-  padding-left: 20%;
-  padding-right: 20%;
 }
+/* Head */
 .head {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10em, auto));
 }
-
+.logo {
+  padding-left: 20%;
+}
 .logo:hover {
   color: #5b7678;
   transition: 0.5s;
@@ -28,6 +29,7 @@ body {
 .navlinks {
   text-align: right;
   list-style-type: none;
+  padding-right: 20%;
 }
 .navlinks ul li {
   display: inline-block;
@@ -43,9 +45,11 @@ body {
   color: #141414;
   background-color: #fff;
   border: 1px solid #fff;
+  transform: translateY(-0.25em);
 }
+/* Hero */
 .hero {
-  height: 35vh;
+  height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -53,6 +57,7 @@ body {
   justify-self: center;
   align-self: center;
   padding-right: 10%;
+  padding-left: 20%;
 }
 .intro h2 {
   font-size: 2em;
@@ -65,27 +70,38 @@ body {
 .heroimage {
   justify-self: end;
   align-self: center;
+  padding-right: 20%;
 }
 
+/* About Section */
+.aboutintro {
+  padding: 0 10% 15% 10%;
+}
 .about {
   height: 35vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 5% 0 10% 0;
 }
 
 .aboutimage img {
   width: 80%;
+  height: auto;
   border-radius: 3%;
+  padding-left: 20%;
+  padding-bottom: 10%;
+}
+.aboutme {
+  align-self: center;
 }
 .aboutme h2 {
   font-size: 1.5em;
 }
 .aboutme p {
   padding-bottom: 5%;
+  padding-right: 20%;
 }
 .tags {
-  padding: 0;
+  padding: 0 20% 10% 0;
 }
 .tags li {
   display: inline-block;
@@ -94,10 +110,39 @@ body {
   padding: 0.5em 1em;
   margin: 0.5em 0.5em 0.5em 0;
   list-style: none;
-  justify-self: start;
   cursor: pointer;
+  transition: 0.5s;
 }
 .tags li:hover {
   background-color: #5b7678;
   color: #fff;
+}
+/* Contact */
+.contact {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 10% 0;
+}
+.contact h2 {
+  text-align: center;
+}
+.contactlinks {
+  text-align: center;
+}
+.contactlinks li {
+  display: inline-block;
+  font-weight: 600;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  margin: 0 0.7em 0 0.7em;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.contactlinks li:hover {
+  background-color: #fff;
+  color: #141414;
+  transform: translateY(-0.25em);
 }
