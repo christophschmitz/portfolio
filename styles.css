@@ -11,14 +11,14 @@ body {
   background-color: #141414;
   color: #fff;
   margin: 0;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .head {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10em, auto));
 }
-.logo {
-  padding-left: 5%;
-}
+
 .logo:hover {
   color: #5b7678;
   transition: 0.5s;
@@ -32,7 +32,7 @@ body {
 .navlinks ul li {
   display: inline-block;
   font-weight: 600;
-  padding: 12px 5%;
+  padding: 1em;
   color: #fff;
   justify-content: space-between;
   transition: 0.5s;
@@ -40,4 +40,26 @@ body {
 }
 .navlinks ul li:hover {
   color: #5b7678;
+}
+.hero {
+  height: 35vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.intro {
+  justify-self: center;
+  align-self: center;
+  padding-right: 10%;
+}
+.intro h2 {
+  font-size: 2em;
+}
+
+.intro p {
+  font-size: 1em;
+}
+
+.heroimage {
+  justify-self: end;
+  align-self: center;
 }
