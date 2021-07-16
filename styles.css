@@ -3,3 +3,41 @@
 *::after {
   box-sizing: border-box;
 }
+* {
+  font-family: "Maven Pro", sans-serif;
+  text-decoration: none;
+}
+body {
+  background-color: #141414;
+  color: #fff;
+  margin: 0;
+}
+.head {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, auto));
+}
+.logo {
+  padding-left: 5%;
+}
+.logo:hover {
+  color: #5b7678;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.navlinks {
+  text-align: right;
+  list-style-type: none;
+}
+.navlinks ul li {
+  display: inline-block;
+  font-weight: 600;
+  padding: 12px 5%;
+  color: #fff;
+  justify-content: space-between;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.navlinks ul li:hover {
+  color: #5b7678;
+}
