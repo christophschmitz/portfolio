@@ -35,7 +35,7 @@ body {
   display: inline-block;
   font-weight: 600;
   padding: 0.5em 1.5em 0.5em 1.5em;
-  margin: 0 0.7em 0 0.7em;
+  margin: 0.5em 0.7em 0.5em 0.7em;
   color: #fff;
   transition: 0.5s;
   cursor: pointer;
@@ -52,6 +52,7 @@ body {
   height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-image: linear-gradient(#000000, #141414);
 }
 .intro {
   justify-self: center;
@@ -75,9 +76,16 @@ body {
 
 /* About Section */
 .aboutintro {
-  padding: 0 10% 15% 10%;
+  padding: 5% 15% 5% 15%;
+  border-radius: 15px;
+  margin: 5% 10% 0 10%;
+  background-color: rgba(255, 255, 255, 0.041);
+}
+.aboutintro p {
+  font-size: 1.2em;
 }
 .about {
+  margin-top: 5%;
   height: 35vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -97,6 +105,7 @@ body {
   font-size: 1.5em;
 }
 .aboutme p {
+  font-size: 1.2em;
   padding-bottom: 5%;
   padding-right: 20%;
 }
@@ -117,13 +126,51 @@ body {
   background-color: #5b7678;
   color: #fff;
 }
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: 10% 25% 25% 25% 10%;
+  grid-gap: 1.66%;
+  margin-top: 10%;
+}
+.card1 {
+  background-color: rgba(255, 255, 255, 0.041);
+  border-radius: 15px;
+  grid-column-start: 2;
+}
+
+.card2 {
+  background-color: rgba(255, 255, 255, 0.041);
+  border-radius: 15px;
+  grid-column-start: 3;
+}
+.card3 {
+  background-color: rgba(255, 255, 255, 0.041);
+  border-radius: 15px;
+  grid-column-start: 4;
+}
+.cardimage {
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+}
+.cardheading {
+  padding: 5% 5% 0;
+}
+.cardtext {
+  font-size: 1em;
+  padding: 5%;
+}
+
 /* Contact */
 .contact {
   height: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 10% 0;
+  padding: 10% 0 5%;
 }
 .contact h2 {
   text-align: center;
