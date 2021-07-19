@@ -147,8 +147,8 @@ a:visited {
 }
 .tags li {
   display: inline-block;
-  background-color: #141414;
-  color: #fff;
+  background-color: #fff;
+  color: #141414;
   padding: 0.5em 1em;
   margin: 0.5em 0.5em 0.5em 0;
   list-style: none;
@@ -158,8 +158,8 @@ a:visited {
   border-radius: 20px;
 }
 .tags li:hover {
-  background-color: #fff;
-  color: #141414;
+  background-color: #141414;
+  color: #fff;
 }
 /* Cards */
 #cards {
