@@ -6,6 +6,7 @@
 * {
   font-family: "Maven Pro", sans-serif;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #141414;
@@ -20,11 +21,6 @@ body {
 .logo {
   grid-column-start: 2;
 }
-.logo:hover {
-  color: #5b7678;
-  transition: 0.5s;
-  cursor: pointer;
-}
 
 .navlinks {
   grid-column-start: 3;
@@ -34,9 +30,10 @@ body {
 .navlinks ul li {
   display: inline-block;
   font-weight: 600;
-  padding: 0.5em 1.5em;
-  margin: 0.5em 0.7em 0.5em 0.7em;
+  padding: 0.5em;
+  margin: 0.5em;
   color: #fff;
+
   transition: 0.5s;
   cursor: pointer;
 }
@@ -45,19 +42,24 @@ body {
   text-decoration: underline;
   transform: translateY(-0.25em);
 }
+.navlinks ul li a,
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
 /* Hero */
 .hero {
-  height: 50vh;
+  height: 75vh;
   display: grid;
   grid-template-columns: 10% 40% 40% 10%;
   background-image: linear-gradient(#000000, #141414);
-  padding: 5% 0 5% 0;
 }
 .intro {
   grid-column-start: 2;
   justify-self: center;
   align-self: center;
-  padding-right: 10%;
+  padding-right: 5%;
 }
 .intro h2 {
   font-size: 2em;
@@ -68,9 +70,11 @@ body {
 }
 .intro a {
   text-decoration: none;
-  color: inherit;
+  color: #fff;
   border: 1px solid #fff;
+  border-radius: 30px;
   padding: 0.5em 1.5em;
+  box-shadow: 5px 5px 50px -9px #0b0b0b;
   transition: 0.5s;
 }
 .intro a:hover {
@@ -79,12 +83,11 @@ body {
   border: 1px solid #fff;
   padding: 0.5em 1.5em;
   transition: 0.5s;
-  transform: translateY(-0.25em);
 }
 
 .heroimage {
   grid-column-start: 3;
-  width: 75%;
+  width: 50%;
   justify-self: flex-end;
   align-self: center;
 }
@@ -100,13 +103,15 @@ body {
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.041);
   grid-column-start: 2;
+  box-shadow: 5px 5px 50px -9px #0b0b0b;
 }
 .aboutintro h2 {
   grid-column-start: 2;
 }
 .aboutintro p {
   grid-column-start: 2;
-  font-size: 1.2em;
+  font-size: 1em;
+  line-height: 1.6;
 }
 .about {
   display: grid;
@@ -121,6 +126,8 @@ body {
   height: auto;
   border-radius: 3%;
   padding-bottom: 10%;
+  border-radius: 25px;
+  box-shadow: 5px 5px 50px -9px #0b0b0b;
 }
 .aboutme {
   grid-column-start: 3;
@@ -130,49 +137,55 @@ body {
   font-size: 1.5em;
 }
 .aboutme p {
-  font-size: 1.2em;
+  font-size: 1em;
+  line-height: 1.6;
   padding-bottom: 5%;
-  padding-right: 20%;
+  padding-right: 10%;
 }
 .tags {
   padding: 0 20% 10% 0;
 }
 .tags li {
   display: inline-block;
-  background-color: #fff;
-  color: #141414;
+  background-color: #141414;
+  color: #fff;
   padding: 0.5em 1em;
   margin: 0.5em 0.5em 0.5em 0;
   list-style: none;
   cursor: pointer;
   transition: 0.5s;
+  border: 1px solid rgb(198, 198, 198);
   border-radius: 20px;
 }
 .tags li:hover {
-  background-color: #5b7678;
-  color: #fff;
+  background-color: #fff;
+  color: #141414;
 }
 /* Cards */
 #cards {
   display: grid;
   grid-template-columns: 10% 25% 25% 25% 10%;
   grid-gap: 1.66%;
+  padding-top: 5%;
 }
 .card1 {
   background-color: rgba(255, 255, 255, 0.041);
   border-radius: 15px;
   grid-column-start: 2;
+  box-shadow: 5px 5px 50px -9px #0b0b0b;
 }
 
 .card2 {
   background-color: rgba(255, 255, 255, 0.041);
   border-radius: 15px;
   grid-column-start: 3;
+  box-shadow: 5px 5px 50px -9px #0b0b0b;
 }
 .card3 {
   background-color: rgba(255, 255, 255, 0.041);
   border-radius: 15px;
   grid-column-start: 4;
+  box-shadow: 5px 5px 50px -9px #0b0b0b;
 }
 .cardimage {
   object-fit: cover;
@@ -186,6 +199,7 @@ body {
 }
 .cardtext {
   font-size: 1em;
+  line-height: 1.6;
   padding: 5%;
 }
 
@@ -212,6 +226,7 @@ body {
   transition: 0.5s;
   cursor: pointer;
   border: 1px solid #fff;
+  border-radius: 20px;
 }
 .contactlinks li:hover {
   background-color: #fff;
